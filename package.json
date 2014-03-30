@@ -1,0 +1,32 @@
+{
+  "name": "facebook-graph-search",
+  "version": "0.0.0",
+  "description": "Tool to query the Facebook graph search API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clayzermk1/facebook-graph-search.git"
+  },
+  "keywords": [
+    "facebook",
+    "graph",
+    "search"
+  ],
+  "author": "Clay Walker <clayzermk1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clayzermk1/facebook-graph-search/issues"
+  },
+  "homepage": "https://github.com/clayzermk1/facebook-graph-search",
+  "dependencies": {
+    "bower": "*",
+    "csv": "*",
+    "ejs": "*",
+    "express": "3.x",
+    "less-middleware": "~0.1.15",
+    "lodash": "*"
+  }
+}

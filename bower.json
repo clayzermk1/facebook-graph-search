@@ -1,0 +1,21 @@
+{
+  "name": "facebook-graph-search",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/clayzermk1/facebook-graph-search",
+  "authors": [
+    "Clay Walker <clayzermk1@gmail.com>"
+  ],
+  "description": "Tool to query the Facebook graph search API.",
+  "keywords": [
+    "facebook",
+    "graph",
+    "search"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery": "*"
+  }
+}

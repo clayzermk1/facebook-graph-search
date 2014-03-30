@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook Graph Search API Utility</title>
+
+  <link rel="stylesheet" href="/stylesheets/style.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Facebook Graph Search API Utility</h1>
+    </div>
+    <form role="form" action="/" method="POST">
+      <!-- access token -->
+      <fieldset>
+        <div class="form-group">
+          <label for="access_token">Access Token</label>
+          <input type="text" class="form-control" name="access_token" placeholder="Enter access token" value="<%= (this.access_token !== void 0 ? access_token : '') %>">
+          <span class="help-block">You'll need to <a href="https://developers.facebook.com/tools/explorer/145634995501895/">generate a token</a></span>
+        </div>
+      </fieldset>
+
+      <!-- search for businesses in a location -->
+      <input type="hidden" name="type" value="place">
+      <fieldset>
+        <div class="form-group">
+          <label for="q">What are you looking for?</label>
+          <input type="text" class="form-control" name="q" placeholder="example: coffee" value="<%= (this.q !== void 0 ? q : '') %>">
+        </div>
+        <div class="form-group">
+          <label for="center">Where at?</label>
+          <input type="text" class="form-control" name="center" placeholder="example: 37.76,-122.427" value="<%= (this.center !== void 0 ? center : '') %>">
+        </div>
+        <div class="form-group">
+          <label for="distance">How far?</label>
+          <input type="text" class="form-control" name="distance" placeholder="example: 1000" value="<%= (this.distance !== void 0 ? distance : '') %>">
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+
+  <script src="/vendor/jquery/dist/jquery.js"></script>
+  <script src="/vendor/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
